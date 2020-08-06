@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <main>
+    <aside class="aside">
+      <div class="aside__item aside__item__active">
+        <div class="aside__item__number">01</div>
+        <div class="aside__item__name">Home</div>
+        <div class="aside__item__line"></div>
+      </div>
+
+      <div class="aside__item">
+        <div class="aside__item__number">02</div>
+        <div class="aside__item__name">About </div>
+        <div class="aside__item__line"></div>
+      </div>
+    </aside>
+    <div class="toggleMenu">
+      <header class="toggleMenu__header">
+        <img src="img/whiteLogo.svg" alt="" class="logo">
+        <img src="img/close.svg"  onclick="showMenu()"  class="close" alt="">
+      </header>
+      <ul>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+
+      <button class="contact">
+        <p class="contact__text">Contact us</p>
+        <img class="contact__img" src="img/connect.svg" alt="">
+      </button>
+    </div>
+    <section class="section__first aside__white">
+      <!-- <img src="img/Group 212.png" class="section__first__background" alt=""> -->
+      <div class="grid">
+        <header>
+          <img src="img/logo.svg" alt="" class="logo">
+          <nav>
+            <ul>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#" class="active__menu">Services</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="hamburger" onclick="showMenu()">
+            <div class="hamburger__item"></div>
+            <div class="hamburger__item"></div>
+          </div>
+        </header>
+
+        <h1 class="h1">Marvel Power Group</h1>
+        <p class="h1__subtitle">Marvel Power Group is a boutique consulting firm with a fresh, markets-based approach to value creation. We offer services to clients in energy, water, manufacturing and transportation sectors.</p>
+  
+        <button class="contact">
+          <p class="contact__text">Contact us</p>
+          <img class="contact__img" src="img/connect.svg" alt="">
+        </button>
+
+        <div class="lines">
+          <div class="lines__item"></div>
+          <div class="lines__item"></div>
+          <div class="lines__item"></div>
+          <div class="lines__item"></div>
+          <div class="lines__item"></div>
+        </div>
+  
+        <p class="scroll__more">Scroll for more</p>
+      </div>
+    </section>
+
+    <section class="section__second aside__black">
+      <div class="grid">
+        <h2>About Us</h2>
+        <div class="h2__line"></div>
+
+        <figure class="section__second__info">
+          <img class="section__second__info__img" src="img/2438 2.jpg" alt="">
+          <figcaption class="section__second__info__text">
+            Our dynamic, solutions-oriented team brings decades 
+            of relevant transactional, analytical and regulatory experience to supporting our clients’ unique agendas. 
+            <br/> <br/>
+            We are experienced practitioners who have run companies, successfully originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation and climate leadership. 
+            <br/> <br/>
+            We specialize in structuring balanced solutions for all affected stakeholders and uncovering economic opportunities in otherwise opaque environments.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- <section class="section__third aside__black">
+      <div class="grid">
+        <h2>About Us</h2>
+        <div class="h2__line"></div>
+
+        <figure class="section__second__info">
+          <img class="section__second__info__img" src="img/2438 2.jpg" alt="">
+          <figcaption class="section__second__info__text">
+            Our dynamic, solutions-oriented team brings decades 
+            of relevant transactional, analytical and regulatory experience to supporting our clients’ unique agendas. 
+            <br/> <br/> <br/>
+            We are experienced practitioners who have run companies, successfully originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation and climate leadership. 
+            <br/> <br/> <br/>
+            We specialize in structuring balanced solutions for all affected stakeholders and uncovering economic opportunities in otherwise opaque environments.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section__four aside__white">
+    </section> -->
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>

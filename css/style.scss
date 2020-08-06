@@ -1,0 +1,468 @@
+@import './Fonts/fonts.scss';
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, 
+a {
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 9px;
+
+  &__item {
+    height: 2px;
+    width: 25px;
+    background-color: #000;
+  }
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  width: 1110px; 
+}
+
+.section__first {
+  height: 1088px;
+  display: flex;
+  justify-content: center;
+  background-image: url('../img/Group 212.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.section__first__background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  max-width: 1920px;
+}
+
+header {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & nav ul {
+    display: flex;
+
+    & li {
+      list-style-type: none;
+      margin: 0 66px;
+
+      &:first-child,
+      &:last-child {
+        margin: 0;
+      }
+
+      & a {
+        font-family: Sofia Pro;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        color: #000000;
+        padding: 6px 0;
+
+        &.active__menu {
+          border-bottom: 1px solid #F6D330;
+        }
+      }
+    }
+  }
+}
+
+.h1 {
+  margin-top: 320px;
+  font-family: Alata;
+  font-size: 115px;
+  line-height: 130px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+
+  &__subtitle {
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+
+.contact {
+  width: 196px;
+  height: 48px;
+  margin-top: 80px;
+  background: #F9D023;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: 70px auto 105px;
+
+  &__text {
+    font-family: Sofia Pro;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-right: 5px;
+  }
+}
+
+
+.lines {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  &__item {
+    width: 1px;
+    height: 15px;
+    background: #fff;
+
+    &:nth-child(3) {
+      height: 100px;
+      background: #F6D330;
+    }
+  }
+}
+
+.scroll__more {
+  margin-top: 29px;
+  font-family: Sofia Pro;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+.aside {
+  position: fixed;
+  right: 0;
+  top: calc(50% - 27px);
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    transition: 1s ease-out 0.5s;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &__number {
+      font-family: Sofia Pro;
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 10px;
+      color: #FFFFFF;
+      margin-right: 5px;
+    }
+
+    &__name {
+      display: none;
+      font-family: Sofia Pro;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 14px;
+      color: #FFFFFF;
+      margin-right: 5px;
+    }
+
+    &__line {
+      height: 1px;
+      width: 21px;
+      background: #FFFFFF;
+    }
+  }
+
+  &__item__active {
+    & .aside__item__name {
+      display: block;
+    }
+
+    & .aside__item__line {
+      width: 60px;
+      transition: all .2s ease-out;
+    }
+  }
+
+  &__black {
+    .aside__item__number,
+    .aside__item__name {
+      color: #000;
+    }
+
+    .aside__item__line {
+      background-color: #000;
+    }
+  }
+}
+
+.section__third {
+  background: #f2f2f2;
+  padding: 100px 0 140px;
+}
+
+.section__four {
+  background: black;
+  height: 100vh;
+}
+
+.section__second {
+  background: #f2f2f2;
+  padding: 100px 0 140px;
+
+  &__info {
+    display: flex;
+
+    &__img {
+      margin-right: 68px;
+      
+    object-fit: contain;
+    height: 100%;
+    }
+
+    &__text {
+      font-family: Sofia Pro;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+      color: #0B0D21;
+    }
+  }
+}
+
+h2 {
+  font-family: Alata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 100px;
+  color: #000000;
+}
+
+.h2__line {
+  margin: 50px 0 55px;
+  height: 6px;
+  width: 100px;
+  background: #F6D330;
+}
+
+.toggleMenu {
+  display: none;
+  right: -100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: all .5s ease-out;
+
+  &__active {
+    right: 0;
+  }
+
+  &__header {
+    background: #000;
+    margin-top: 0;
+    padding: 20px 15px;
+  }
+
+  & ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 48px - 69px - 70px);
+    & li {
+      list-style-type: none;
+      text-align: center;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      & a {
+        font-family: Sofia Pro;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 54px;
+        color: #000000;
+      }
+    }
+  }
+
+  & button {
+    margin: 0 auto 69px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .lines {
+    display: none;
+  }
+  .aside {
+    display: none;
+  }
+
+  .grid {
+    padding: 0 20px;
+    width: auto;
+  }
+
+  .h1 {
+    margin-top: 200px;
+  }
+
+}
+
+@media screen and (max-width: 876px) {
+  .section__second__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+      margin: 0;
+      margin-bottom: 50px;
+    }
+
+    &__text {
+      text-align: justify;
+    }
+  }
+
+  .h1 {
+    margin-top: 200px;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  
+  .toggleMenu {
+    display: block;
+  }
+
+  .section__first {
+    background-image: url('../img/Mask Group.jpg');
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .h1  {
+    font-size: 80px;
+
+    &__subtitle {
+      font-weight: 300;
+    }
+  }
+
+  .scroll__more {
+    display: none;
+  }
+
+  .section__second {
+    padding: 70px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  header {
+    margin-top: 20px;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+
+  .section__first {
+    height: 520px;
+    background-image: url('../img/Mask Group.jpg');
+  }
+
+  .section__second__info__img {
+    width: 100%;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .h1  {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 60px 0 20px;
+
+    &__subtitle {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 300;
+    }
+  }
+
+  .grid {
+    padding: 0 15px;
+  }
+
+  .scroll__more {
+    display: none;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .section__second {
+    padding: 50px 0;
+  }
+
+  .h2__line {
+    margin: 35px 0;
+  }
+
+  .section__second__info__img {
+    margin-bottom: 30px;
+  }
+}
