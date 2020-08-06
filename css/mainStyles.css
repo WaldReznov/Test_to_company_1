@@ -1,0 +1,370 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 9px;
+}
+
+.hamburger__item {
+  height: 2px;
+  width: 25px;
+  background-color: #000;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid {
+  width: 1110px;
+}
+
+.section__first {
+  height: 1088px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../img/Group 212.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.section__first__background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  max-width: 1920px;
+}
+
+header {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  list-style-type: none;
+  margin: 0 66px;
+}
+
+header nav ul li:first-child, header nav ul li:last-child {
+  margin: 0;
+}
+
+header nav ul li a {
+  font-family: Sofia Pro;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  padding: 6px 0;
+}
+
+header nav ul li a.active__menu {
+  border-bottom: 1px solid #F6D330;
+}
+
+.h1 {
+  margin-top: 320px;
+  font-family: Alata;
+  font-size: 115px;
+  line-height: 130px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.h1__subtitle {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.contact {
+  width: 196px;
+  height: 48px;
+  margin-top: 80px;
+  background: #F9D023;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  margin: 70px auto 105px;
+}
+
+.contact__text {
+  font-family: Sofia Pro;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-right: 5px;
+}
+
+.lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lines__item {
+  width: 1px;
+  height: 15px;
+  background: #fff;
+}
+
+.lines__item:nth-child(3) {
+  height: 100px;
+  background: #F6D330;
+}
+
+.scroll__more {
+  margin-top: 29px;
+  font-family: Sofia Pro;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.aside {
+  position: fixed;
+  right: 0;
+  top: calc(50% - 27px);
+}
+
+.aside__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 30px;
+  -webkit-transition: 1s ease-out 0.5s;
+  transition: 1s ease-out 0.5s;
+}
+
+.aside__item:last-child {
+  margin: 0;
+}
+
+.aside__item__number {
+  font-family: Sofia Pro;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  color: #FFFFFF;
+  margin-right: 5px;
+}
+
+.aside__item__name {
+  display: none;
+  font-family: Sofia Pro;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+  margin-right: 5px;
+}
+
+.aside__item__line {
+  height: 1px;
+  width: 21px;
+  background: #FFFFFF;
+}
+
+.aside__item__active .aside__item__name {
+  display: block;
+}
+
+.aside__item__active .aside__item__line {
+  width: 60px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.aside__black .aside__item__number,
+.aside__black .aside__item__name {
+  color: #000;
+}
+
+.aside__black .aside__item__line {
+  background-color: #000;
+}
+
+.section__third {
+  background: #f2f2f2;
+  padding: 100px 0 140px;
+}
+
+.section__four {
+  background: black;
+  height: 100vh;
+}
+
+.section__second {
+  background: #f2f2f2;
+  padding: 100px 0 140px;
+}
+
+.section__second__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section__second__info__img {
+  margin-right: 68px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}
+
+.section__second__info__text {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #0B0D21;
+}
+
+h2 {
+  font-family: Alata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 100px;
+  color: #000000;
+}
+
+.h2__line {
+  margin: 50px 0 55px;
+  height: 6px;
+  width: 100px;
+  background: #F6D330;
+}
+
+.toggleMenu {
+  display: none;
+  right: -100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: white;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.toggleMenu__active {
+  right: 0;
+}
+
+.toggleMenu__header {
+  background: #000;
+  margin-top: 0;
+  padding: 20px 15px;
+}
+
+.toggleMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc(100% - 48px - 69px - 70px);
+}
+
+.toggleMenu ul li {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.toggleMenu ul li:last-child {
+  margin-bottom: 0;
+}
+
+.toggleMenu ul li a {
+  font-family: Sofia Pro;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 54px;
+  color: #000000;
+}
+
+.toggleMenu button {
+  margin: 0 auto 69px;
+}
+/*# sourceMappingURL=mainStyles.css.map */
