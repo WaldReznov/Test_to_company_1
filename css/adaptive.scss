@@ -1,4 +1,5 @@
-@media screen and (max-width: 1110px) {
+
+@media screen and (max-width: 1130px) {
   .lines {
     display: none;
   }
@@ -8,16 +9,61 @@
 
   .grid {
     padding: 0 20px;
-    width: auto;
+    width: 100%;
   }
 
   .h1 {
     margin-top: 200px;
   }
 
+  .section__lines__container {
+    display: none;
+  }
+
+  .section__four__grid {
+    flex-direction: column;
+  }
+
+  .section__four__email__info {
+    word-break: break-all;
+  }
+
+  .section__four__info:first-child {
+    margin-right: 40px;
+  }
+
+  .section__four__info:last-child {
+    margin-left: 40px;
+  }
+
+  .section__four__info {
+    margin: 0 auto 0 0;
+  }
+
 }
 
 @media screen and (max-width: 876px) {
+
+  .section__four__email {
+    width: 552px;
+  }
+
+  .section__four__grid {
+    flex-direction: column;
+  }
+
+  .section__four__info:first-child {
+    margin-right: 0;
+  }
+
+  .section__four__info:last-child {
+    margin-left: 0;
+  }
+
+  .section__third__text {
+    width: auto;
+  }
+
   .section__second__info {
     display: flex;
     flex-direction: column;
@@ -36,6 +82,7 @@
   .h1 {
     margin-top: 200px;
   }
+
 }
 
 
@@ -72,9 +119,23 @@
   .section__second {
     padding: 70px 0;
   }
+
+  .section__four__title__text,
+  .section__four__email__info a{
+    font-size: 35px;
+  }
+
+  .section__four__email {
+    width: 482px;
+  }
 }
 
 @media screen and (max-width: 576px) {
+
+  
+  .section__four__email {
+    width: 345px;
+}
 
   header {
     margin-top: 20px;
@@ -136,5 +197,50 @@
 
   .section__second__info__img {
     margin-bottom: 30px;
+  }
+  
+  .section__third {
+    padding: 50px 0;
+  }
+
+  .advantages__item__title {
+    font-size: 25px;
+    width: auto;
+  }
+
+  .advantages {
+    grid-gap: 50px;
+    grid-template-columns: 290px;
+  }
+
+  .section__four {
+    padding: 50px 0;
+  }
+
+  .form__input {
+    width: 290px;
+  }
+
+  .section__four__title__text {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .form__button {
+    width: 196px;
+  }
+  .section__four__title__text, .section__four__email__info a {
+    font-size: 25px;
+    word-break: break-word;
+  }
+
+  .section__four__grid { 
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section__four__email {
+    width: auto;
   }
 }

@@ -1,5 +1,4 @@
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +8,10 @@
 
 a {
   text-decoration: none;
+}
+
+main {
+  background-color: #f2f2f2;
 }
 
 button, 
@@ -226,16 +229,6 @@ header {
   }
 }
 
-.section__third {
-  background: #f2f2f2;
-  padding: 100px 0 140px;
-}
-
-.section__four {
-  background: black;
-  height: 100vh;
-}
-
 .section__second {
   background: #f2f2f2;
   padding: 100px 0 140px;
@@ -322,5 +315,196 @@ h2 {
 
   & button {
     margin: 0 auto 69px;
+  }
+}
+
+.section__third {
+  background: #F6D330;
+  padding: 100px 0;
+
+  &__h2 {
+    color: #000;
+    &__line {
+      background-color: #fff;
+    }
+  }
+
+  &__arrow {
+    margin: 40px 0 0 20px;
+  }
+
+  &__text {
+    width: 840px;
+    font-family: Sofia Pro;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #0B0D21;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+  
+  &__item {
+    justify-self: center;
+    margin-bottom: 50px;
+
+    &__title {
+      margin-bottom: 30px;
+      font-family: Sofia Pro;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 42px;
+      color: #000000;
+      width: 300px;
+    }
+
+    & li {
+      list-style-type: none;
+      color: #fff;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 25px;
+
+      & img {
+        margin: 8px 15px 0 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & span {
+        color: #000;
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 20px;
+        color: #0B0D21;
+      }
+    }
+    
+  }
+}
+
+.section__lines__container {
+  position: absolute;
+}
+
+.section__lines {
+  display: flex; 
+  justify-content: space-between;
+  margin: 0 auto;
+  position: absolute;
+  top: -7.5px;
+
+  &__item {
+    width: 1px;
+    height: 15px; 
+    background-color: #000;
+  }
+}
+
+.section__four__grid {
+  display: flex;
+  margin-bottom: 90px;
+}
+
+.section__four {
+  padding: 100px 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+
+  &__info {
+    margin: 0 auto;
+  }
+
+  &__h2 {
+    color: #fff;
+
+    &__line {
+      margin: 40px 0;
+    }
+  }
+
+  &__email{
+    display: flex;
+    flex-direction: column;
+    
+
+    .section__four__title__text {
+      margin-top: 0;
+    }
+
+    &__info a{
+      font-family: Sofia Pro;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 42px;
+      color: #FFFFFF;
+    }
+
+    &__info {
+      border-bottom: 3px solid #f9d330;
+    
+      & a{
+        color: #f9d330;
+        
+      }
+    }
+  }
+}
+
+.section__four__title__text {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 42px;
+  color: #FFFFFF;
+  margin-top: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 40px;
+
+  &__input {
+    width: 455px;
+    height: 50px;
+    font-family: Sofia Pro;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+    color: #000000;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border: none;
+    margin-bottom: 15px;
+
+    &::placeholder {
+      color: #000;
+    }
+  }
+
+  &__button {
+    margin: 0;
+    width: 272px;
   }
 }

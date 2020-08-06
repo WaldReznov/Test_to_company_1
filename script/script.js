@@ -48,6 +48,7 @@ function changeActiveAside(index) {
 
 window.addEventListener('scroll', handleScroll);
 
+handleScroll();
 
 const showMenu = () => {
   document.getElementsByClassName('toggleMenu')[0].classList.toggle('toggleMenu__active')
